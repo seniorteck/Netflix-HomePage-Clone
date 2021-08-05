@@ -1,0 +1,36 @@
+import _resets;
+
+$buttoncolor: red;
+$fontColor: #fff;
+
+
+@font-face {
+    font-family: Netflix Sans, sans-serif;
+    src: url(../Assets/fonts/NetflixSans_W_Rg.woff2);
+}
+
+body{
+    font-family: Netflix Sans, sans-serif;
+}
+
+.overlay{
+    background: radial-gradient(red, blue);
+}
+
+.signin{
+    background-color: $buttoncolor;
+    outline: none;
+    border: 0;
+    color: $fontColor;
+    padding: 7px 5px;
+    border-radius: 5px;
+}
+
+// .hero-banner{
+//     background: url(../Assets/images/US-en-20210719-popsignuptwoweeks-perspective_alpha_website_medium.jpg) ;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     color: $fontColor;
+//     height: 100vh;
+//     width: 100%;
+// }

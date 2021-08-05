@@ -1,0 +1,22 @@
+@font-face {
+  font-family: Netflix Sans, sans-serif;
+  src: url(../Assets/fonts/NetflixSans_W_Rg.woff2);
+}
+
+body {
+  font-family: Netflix Sans, sans-serif;
+}
+
+.overlay {
+  background: radial-gradient(red, blue);
+}
+
+.signin {
+  background-color: red;
+  outline: none;
+  border: 0;
+  color: #fff;
+  padding: 7px 5px;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=style.css.map */
