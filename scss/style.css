@@ -1,3 +1,10 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 @font-face {
   font-family: Netflix Sans, sans-serif;
   src: url(../Assets/fonts/NetflixSans_W_Rg.woff2);
@@ -7,11 +14,23 @@ body {
   font-family: Netflix Sans, sans-serif;
 }
 
-.overlay {
-  background: radial-gradient(red, blue);
+.story-container {
+  text-align: center;
 }
 
-.signin {
+.story-container .story-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.story-container .signin-btn {
   background-color: red;
   outline: none;
   border: 0;

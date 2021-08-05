@@ -1,9 +1,11 @@
-import _resets;
+//partials modules
+@import "resets";
 
+//variables
 $buttoncolor: red;
 $fontColor: #fff;
 
-
+//local-webfonts-setup
 @font-face {
     font-family: Netflix Sans, sans-serif;
     src: url(../Assets/fonts/NetflixSans_W_Rg.woff2);
@@ -13,11 +15,19 @@ body{
     font-family: Netflix Sans, sans-serif;
 }
 
-.overlay{
-    background: radial-gradient(red, blue);
-}
+//story-container
+.story-container{
+    text-align: center;
 
-.signin{
+    //story-header with logo
+   .story-header{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+   }
+
+   //signin-btn
+   .signin-btn{
     background-color: $buttoncolor;
     outline: none;
     border: 0;
@@ -25,6 +35,9 @@ body{
     padding: 7px 5px;
     border-radius: 5px;
 }
+}
+
+
 
 // .hero-banner{
 //     background: url(../Assets/images/US-en-20210719-popsignuptwoweeks-perspective_alpha_website_medium.jpg) ;
