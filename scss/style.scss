@@ -18,12 +18,18 @@ body{
 //story-container
 .story-container{
     text-align: center;
+    padding: 10px 20px;
 
     //story-header with logo
    .story-header{
        display: flex;
        justify-content: space-between;
        align-items: center;
+
+       #netflix-logo{
+           width: 88px;
+
+       }
    }
 
    //signin-btn
