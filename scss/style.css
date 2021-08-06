@@ -89,11 +89,25 @@ body {
   font-size: 1.15rem;
 }
 
-.story-container .email-form {
+.story-container .story-title {
+  font-size: 28px;
+}
+
+.story-container .signin-btn {
+  background-color: red;
+  outline: none;
+  border: 0;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 0.92rem;
+}
+
+.email-form {
   margin: 10px 0;
 }
 
-.story-container .email-form input {
+.email-form input {
   display: block;
   width: 100%;
   padding: 15px 10px;
@@ -101,7 +115,7 @@ body {
   border: none;
 }
 
-.story-container .email-form .signup-btn {
+.email-form .signup-btn {
   padding: 10px 20px;
   background-color: red;
   color: #fff;
@@ -119,20 +133,6 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin: 10px auto;
-}
-
-.story-container .story-title {
-  font-size: 28px;
-}
-
-.story-container .signin-btn {
-  background-color: red;
-  outline: none;
-  border: 0;
-  color: #fff;
-  padding: 4px 8px;
-  border-radius: 5px;
-  font-size: 0.92rem;
 }
 
 .story-card {
@@ -180,11 +180,20 @@ body {
 }
 
 .faq-card .faq-questions {
-  padding: 14.5px 40px;
+  padding: 14.5px 20px;
   border: 0;
   width: 100%;
   background-color: #333;
   color: #fff;
   font-size: 1.15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */

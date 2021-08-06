@@ -85,34 +85,6 @@ body{
        padding: 0 1rem;
        font-size: $subtitleFont;
    }
-   .email-form{
-       margin: 10px 0;
-
-        //email-form input
-       input{
-           display: block;
-           width: 100%;
-           padding: 15px 10px;
-           outline: none;
-           border: none;
-       }
-
-       //get started button
-       .signup-btn{
-           padding: 10px 20px;
-           background-color: $buttoncolor;
-           color: #fff;
-           outline: none;
-           border: none;
-           border-radius: 2px;
-           margin: 15px 0;
-           font-size: $buttonFont;
-           display: flex;
-           align-items: center;
-           justify-content: space-around;
-           margin: 10px auto;
-       }
-   }
 
    //story-title heading
    .story-title{
@@ -128,6 +100,36 @@ body{
     padding: 4px 8px;
     border-radius: 5px;
     font-size: $signinFont;
+    }
+}
+
+//email-form
+.email-form{
+    margin: 10px 0;
+
+     //email-form input
+    input{
+        display: block;
+        width: 100%;
+        padding: 15px 10px;
+        outline: none;
+        border: none;
+    }
+
+    //get started button
+    .signup-btn{
+        padding: 10px 20px;
+        background-color: $buttoncolor;
+        color: #fff;
+        outline: none;
+        border: none;
+        border-radius: 2px;
+        margin: 15px 0;
+        font-size: $buttonFont;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 10px auto;
     }
 }
 
@@ -179,14 +181,15 @@ body{
     }
 
     .faq-questions{
-        padding: 14.5px 40px;
+        padding: 14.5px 20px;
         border: 0;
         width: 100%;
         background-color: #333;
         color: #fff;
         font-size: $subtitleFont;
-
-
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
