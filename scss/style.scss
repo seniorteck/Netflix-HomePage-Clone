@@ -97,10 +97,10 @@ body{
            border-radius: 2px;
            margin: 15px 0;
            font-size: $buttonFont;
-
-           .right-arrow{
-               transform: translateY(7px);
-           }
+           display: flex;
+           align-items: center;
+           justify-content: space-around;
+           margin: 10px auto;
        }
    }
 
