@@ -4,6 +4,7 @@
 //variables
 $buttoncolor: red;
 $fontColor: #fff;
+$headingFont: 28px;
 
 //local-webfonts-setup
 @font-face {
@@ -19,12 +20,31 @@ body{
 .story-container{
     text-align: center;
     padding: 10px 20px;
+    background: url(../assets/images/US-en-20210719-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+    background-repeat: no-repeat;
+    color: $fontColor;
+    animation: bgChanger 5s infinite linear alternate-reverse;
+    transition: background all 5s ease-in-out;
+
+    //story-container animation keyframes 
+@keyframes bgChanger {
+    from{
+        background: url(../assets/images/US-en-20210719-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+    }
+    to{
+        background: url(../assets/images/NG-en-20210719-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+    }
+}
+
+    
 
     //story-header with logo
    .story-header{
        display: flex;
        justify-content: space-between;
        align-items: center;
+       
+
 
        #netflix-logo{
            width: 88px;
@@ -40,16 +60,9 @@ body{
     color: $fontColor;
     padding: 7px 5px;
     border-radius: 5px;
+    }
 }
-}
 
 
 
-// .hero-banner{
-//     background: url(../Assets/images/US-en-20210719-popsignuptwoweeks-perspective_alpha_website_medium.jpg) ;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     color: $fontColor;
-//     height: 100vh;
-//     width: 100%;
-// }
+

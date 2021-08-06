@@ -17,6 +17,30 @@ body {
 .story-container {
   text-align: center;
   padding: 10px 20px;
+  background: url(../assets/images/US-en-20210719-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+  background-repeat: no-repeat;
+  color: #fff;
+  animation: bgChanger 5s infinite linear alternate-reverse;
+  -webkit-transition: background all 5s ease-in-out;
+  transition: background all 5s ease-in-out;
+}
+
+@-webkit-keyframes bgChanger {
+  from {
+    background: url(../assets/images/US-en-20210719-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+  }
+  to {
+    background: url(../assets/images/NG-en-20210719-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+  }
+}
+
+@keyframes bgChanger {
+  from {
+    background: url(../assets/images/US-en-20210719-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+  }
+  to {
+    background: url(../assets/images/NG-en-20210719-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+  }
 }
 
 .story-container .story-header {
