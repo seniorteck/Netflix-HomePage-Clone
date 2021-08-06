@@ -79,14 +79,14 @@ body {
 }
 
 .story-container .story-subtitle {
-  font-size: 1rem;
+  font-size: 1.15rem;
   margin: 16px 0;
   font-weight: 400;
 }
 
 .story-container .story-description {
   padding: 0 1rem;
-  font-size: 1rem;
+  font-size: 1.15rem;
 }
 
 .story-container .email-form {
@@ -130,8 +130,9 @@ body {
   outline: none;
   border: 0;
   color: #fff;
-  padding: 7px 5px;
+  padding: 4px 8px;
   border-radius: 5px;
+  font-size: 0.92rem;
 }
 
 .story-card {
@@ -140,5 +141,14 @@ body {
   color: #fff;
   margin: 7px 0;
   padding: 50px 18px;
+}
+
+.story-card .story-card-headline {
+  font-size: 1.64rem;
+  margin: 0 0 8px;
+}
+
+.story-card .story-card-subtitle {
+  font-size: 1.15rem;
 }
 /*# sourceMappingURL=style.css.map */

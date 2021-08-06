@@ -5,8 +5,10 @@
 $buttoncolor: red;
 $fontColor: #fff;
 $titleFont: 28px;
-$subtitleFont: 1rem;
+$subtitleFont: 1.15rem;
 $buttonFont: 1rem;
+$storyCardfonts:1.64rem;
+$signinFont: .92rem;
 
 //local-webfonts-setup
 @font-face {
@@ -47,12 +49,13 @@ body{
        justify-content: space-between;
        align-items: center;
        
-
+        //netflix-logo
        #netflix-logo{
            width: 88px;
        }
    }
 
+   //overlay-gradient
    .overlay-gradient{
        background: radial-gradient(rgba(0,0,0,0.1), rgba(0,0,0, 1.0));
        height: inherit;
@@ -64,15 +67,20 @@ body{
        z-index: -2;
    }
 
+   //story-content
    .story-content{
        padding: 15px 0;
        margin: 25px 0;    
    }
+
+   //story-subtitle
    .story-subtitle{
        font-size: $subtitleFont;
        margin: 16px 0;
        font-weight: 400;
    }
+
+   //story-description
    .story-description{
        padding: 0 1rem;
        font-size: $subtitleFont;
@@ -80,6 +88,7 @@ body{
    .email-form{
        margin: 10px 0;
 
+        //email-form input
        input{
            display: block;
            width: 100%;
@@ -116,17 +125,29 @@ body{
     outline: none;
     border: 0;
     color: $fontColor;
-    padding: 7px 5px;
+    padding: 4px 8px;
     border-radius: 5px;
+    font-size: $signinFont;
     }
 }
 
+//story-card
 .story-card{
     text-align: center;
     background: rgb(0,0,0);
     color: #fff;
     margin: 7px 0;
     padding: 50px 18px;
+
+    //story-card-headline
+    .story-card-headline{
+        font-size: $storyCardfonts;
+        margin: 0 0 8px;
+    }
+    //story-card-subtitle
+    .story-card-subtitle{
+        font-size: $subtitleFont;
+    }
 }
 
 
