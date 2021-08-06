@@ -196,4 +196,46 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.story-membership {
+  padding: 0px 20px;
+  text-align: center;
+}
+
+.story-membership .story-membership-title {
+  font-size: 1.15rem;
+  padding: 0 16px;
+  font-weight: 400;
+}
+
+.story-footer {
+  margin: 7px 0 0;
+  background-color: black;
+  padding: 50px 18px;
+  color: #fff;
+}
+
+.story-footer .story-footer-title {
+  font-size: 1rem;
+}
+
+.story-footer a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.7rem;
+}
+
+.story-footer a:hover {
+  text-decoration: underline;
+}
+
+.story-footer .footer-links {
+  margin: 15px 19px 0 0;
+}
+
+.story-footer .footer-links li {
+  list-style-type: none;
+  cursor: pointer;
+  margin: 15px 0;
+}
 /*# sourceMappingURL=style.css.map */
