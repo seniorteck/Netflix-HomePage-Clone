@@ -16,6 +16,7 @@ $buttonFont: 1rem;
 
 body{
     font-family: Netflix Sans, sans-serif;
+    background-color: #333;
 }
 
 //story-container
@@ -119,6 +120,15 @@ body{
     border-radius: 5px;
     }
 }
+
+.story-card{
+    text-align: center;
+    background: rgb(0,0,0);
+    color: #fff;
+    margin: 7px 0;
+    padding: 50px 18px;
+}
+
 
 
 
