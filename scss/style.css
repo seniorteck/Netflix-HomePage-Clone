@@ -151,4 +151,40 @@ body {
 .story-card .story-card-subtitle {
   font-size: 1.15rem;
 }
+
+.faq-card {
+  background: black;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.faq-card .faq-card-headline {
+  font-size: 1.64rem;
+  padding: 0 18px;
+  margin: 0 0 8px;
+  text-align: center;
+}
+
+.faq-card .faq-list {
+  margin: 20px 0;
+}
+
+.faq-card .faq-list .closed {
+  display: none;
+}
+
+.faq-card .faq-list li {
+  list-style-type: none;
+  cursor: pointer;
+  margin: 8px 0;
+}
+
+.faq-card .faq-questions {
+  padding: 14.5px 40px;
+  border: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.15rem;
+}
 /*# sourceMappingURL=style.css.map */
