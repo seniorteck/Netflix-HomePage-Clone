@@ -174,10 +174,10 @@ body{
             display: none;
         }
 
+    
         //faq-list li
         li{
-            list-style-type: none;
-            cursor: pointer;
+            list-style-type: none; 
             margin: 8px 0;
         }
     }
@@ -193,6 +193,7 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        cursor: pointer;
     }
 }
 
@@ -235,12 +236,11 @@ body{
     .footer-links {
         margin: 15px 19px 0 0;
        
-
-
         li{
             list-style-type: none;
             cursor: pointer;
             margin: 15px 0;
+            cursor: pointer;
         }
         
     }
