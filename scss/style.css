@@ -20,9 +20,11 @@ body {
   background: url(../assets/images/US-en-20210719-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
   background-repeat: no-repeat;
   color: #fff;
-  animation: bgChanger 5s infinite linear alternate-reverse;
-  -webkit-transition: background all 5s ease-in-out;
-  transition: background all 5s ease-in-out;
+  animation: bgChanger 2s infinite linear alternate-reverse;
+  -webkit-transition: background all 2s ease-in-out;
+  transition: background all 2s ease-in-out;
+  position: relative;
+  z-index: -3;
 }
 
 @-webkit-keyframes bgChanger {
@@ -57,6 +59,59 @@ body {
 
 .story-container .story-header #netflix-logo {
   width: 88px;
+}
+
+.story-container .overlay-gradient {
+  background: radial-gradient(rgba(0, 0, 0, 0.1), black);
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: inherit;
+}
+
+.story-container .story-content {
+  padding: 15px 0;
+}
+
+.story-container .story-subtitle {
+  font-size: 1rem;
+  margin: 16px 0;
+  font-weight: 400;
+}
+
+.story-container .story-description {
+  padding: 0 1rem;
+  font-size: 1rem;
+}
+
+.story-container .email-form {
+  margin: 10px 0;
+}
+
+.story-container .email-form input {
+  display: block;
+  width: 100%;
+  padding: 15px 10px;
+  outline: none;
+  border: none;
+}
+
+.story-container .email-form button {
+  padding: 10px 20px;
+  background-color: red;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  margin: 15px 0;
+  font-size: 1rem;
+}
+
+.story-container .story-title {
+  font-size: 28px;
 }
 
 .story-container .signin-btn {

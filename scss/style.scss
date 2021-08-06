@@ -4,7 +4,9 @@
 //variables
 $buttoncolor: red;
 $fontColor: #fff;
-$headingFont: 28px;
+$titleFont: 28px;
+$subtitleFont: 1rem;
+$buttonFont: 1rem;
 
 //local-webfonts-setup
 @font-face {
@@ -23,8 +25,10 @@ body{
     background: url(../assets/images/US-en-20210719-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
     background-repeat: no-repeat;
     color: $fontColor;
-    animation: bgChanger 5s infinite linear alternate-reverse;
-    transition: background all 5s ease-in-out;
+    animation: bgChanger 2s infinite linear alternate-reverse;
+    transition: background all 2s ease-in-out;
+    position: relative;
+    z-index: -3;
 
     //story-container animation keyframes 
 @keyframes bgChanger {
@@ -36,8 +40,6 @@ body{
     }
 }
 
-    
-
     //story-header with logo
    .story-header{
        display: flex;
@@ -45,11 +47,62 @@ body{
        align-items: center;
        
 
-
        #netflix-logo{
            width: 88px;
 
        }
+   }
+
+   .overlay-gradient{
+       background: radial-gradient(rgba(0,0,0,0.1), rgba(0,0,0, 1.0));
+       height: inherit;
+       position: absolute;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       z-index: inherit;
+   }
+
+   .story-content{
+       padding: 15px 0;
+   }
+   .story-subtitle{
+       font-size: $subtitleFont;
+       margin: 16px 0;
+       font-weight: 400;
+   }
+   .story-description{
+       padding: 0 1rem;
+       font-size: $subtitleFont;
+   }
+   .email-form{
+       margin: 10px 0;
+
+       input{
+           display: block;
+           width: 100%;
+           padding: 15px 10px;
+           outline: none;
+           border: none;
+       }
+
+       //get started button
+       button{
+           padding: 10px 20px;
+           background-color: $buttoncolor;
+           color: #fff;
+           outline: none;
+           border: none;
+           border-radius: 2px;
+           margin: 15px 0;
+           font-size: $buttonFont;
+       }
+   }
+
+   //story-title heading
+   .story-title{
+       font-size: $titleFont;
    }
 
    //signin-btn
