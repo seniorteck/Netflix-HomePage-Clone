@@ -101,6 +101,40 @@ body {
   padding: 4px 8px;
   border-radius: 5px;
   font-size: 0.92rem;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.story-container .signin-btn:hover {
+  background-color: transparent;
+}
+
+.story-container .signin-btn::before {
+  content: "";
+  background-color: #b40101;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  z-index: -1;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transform: translateX(-70px);
+          transform: translateX(-70px);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.story-container .signin-btn:hover::before {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .email-form {
@@ -213,24 +247,17 @@ body {
   background-color: black;
   padding: 50px 18px;
   color: #fff;
+  position: relative;
 }
 
 .story-footer .story-footer-title {
   font-size: 1rem;
 }
 
-.story-footer a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 0.7rem;
-}
-
-.story-footer a:hover {
-  text-decoration: underline;
-}
-
 .story-footer .footer-links {
   margin: 15px 19px 0 0;
+  -webkit-columns: 2;
+          columns: 2;
 }
 
 .story-footer .footer-links li {
@@ -238,5 +265,26 @@ body {
   cursor: pointer;
   margin: 15px 0;
   cursor: pointer;
+}
+
+.story-footer .footer-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.7rem;
+}
+
+.story-footer .footer-links li a:hover {
+  text-decoration: underline;
+}
+
+.story-footer #netflix-ng {
+  position: absolute;
+  bottom: 15px;
+}
+
+.story-footer #netflix-ng a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.7rem;
 }
 /*# sourceMappingURL=style.css.map */
